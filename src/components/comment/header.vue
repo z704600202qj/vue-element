@@ -4,8 +4,8 @@
       <!--name-->
       <el-col :xs="12" :sm="12" :md="4">
         <div class="logo">
-          <span class="logo_prefix">JSPang</span>
-          <span class="logo_suffix">Admin</span>
+          <span class="logo_prefix">vue-</span>
+          <span class="logo_suffix">element</span>
         </div>
       </el-col>
       <!--SEARCH-->
@@ -13,7 +13,7 @@
         <el-autocomplete
           size="small"
           v-model="text"
-          placeholder="请输入内容"
+          placeholder="搜索 三全鲜食"
           :fetch-suggestions="querySearch"
           :trigger-on-focus="false"
           @select="handleSelect"
@@ -26,7 +26,7 @@
       <el-col :md="4">
         <div class="website">
           <span>Website:</span>
-          <span>www.jspang.com</span>
+          <span>www.51hero.cn</span>
         </div>
       </el-col>
       <!--avatar-->

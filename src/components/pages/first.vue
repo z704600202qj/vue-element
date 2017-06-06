@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <page-title></page-title>
+      <page-title vtitle="仪表盘"></page-title>
     </div>
     <div class="clear"></div>
     <el-row :gutter="20">

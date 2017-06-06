@@ -7,31 +7,31 @@
   </div>
 </template>
 <script>
-  export default {
-    data () {
-      return {
-        inputContent: '',
-        listContents: [
-          {content: 'What do you think?', isDone: false},
-          {content: 'Have fun with blue admin', isDone: false},
-          {content: 'Write email to business cat', isDone: false},
-          {content: 'Get in touch with jspang team', isDone: false},
-          {content: 'Ei cum soleet appareat,ex est graeci medioc', isDone: false},
-          {content: 'Simaul erroribus ad usu', isDone: false},
-          {content: 'Vim an eius ocurreret abhorreant,id name a', isDone: false}
-        ]
-      }
-    },
-    methods: {
-      add: function () {
-        if (this.inputContent !== '') {
-          var addContent = {content: this.inputContent, isDone: true}
-          this.listContents.splice(0, 0, addContent)
-          this.inputContent = ''
-        }
+export default {
+  data () {
+    return {
+      inputContent: '',
+      listContents: [
+        { content: 'What do you think?', isDone: false },
+        { content: 'Have fun with blue admin', isDone: false },
+        { content: 'Write email to business cat', isDone: false },
+        { content: 'Get in touch with jspang team', isDone: false },
+        { content: 'Ei cum soleet appareat,ex est graeci medioc', isDone: false },
+        { content: 'Simaul erroribus ad usu', isDone: false },
+        { content: 'Vim an eius ocurreret abhorreant,id name a', isDone: false }
+      ]
+    }
+  },
+  methods: {
+    add: function () {
+      if (this.inputContent !== '') {
+        var addContent = { content: this.inputContent, isDone: true }
+        this.listContents.splice(0, 0, addContent)
+        this.inputContent = ''
       }
     }
   }
+}
 </script>
 <style lang="stylus">
   .my-input

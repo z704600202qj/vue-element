@@ -6,19 +6,19 @@
       <transition name="move" mode="out-in">
         <router-view></router-view>
       </transition>
+  
     </div>
   </div>
 </template>
-
 <script>
-  import top from './comment/header'
-  import Sidebar from './comment/Sidebar'
-  export default {
-    components: {
-      top,
-      Sidebar
-    }
+import top from './comment/header'
+import Sidebar from './comment/Sidebar'
+export default {
+  components: {
+    top,
+    Sidebar
   }
+}
 </script>
 <style lang="stylus">
   .wrappar
